@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleWebView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZa-3Z-nfM">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="5tx-Vt-FYB"/>
+                                    <constraint firstAttribute="height" constant="818" id="9HL-6a-2dy"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="HFR-gs-3nE"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="818" id="YfF-Qy-j0z"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qZa-3Z-nfM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RrI-em-aOM"/>
+                            <constraint firstItem="qZa-3Z-nfM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Sh9-od-kug"/>
+                            <constraint firstItem="qZa-3Z-nfM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="T7H-2D-wwm"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="qZa-3Z-nfM" secondAttribute="bottom" id="UOa-nR-nTt"/>
+                            <constraint firstItem="qZa-3Z-nfM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cQk-EX-BFE"/>
+                            <constraint firstItem="qZa-3Z-nfM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gzS-nu-Ndr"/>
+                            <constraint firstItem="qZa-3Z-nfM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hJw-JS-dBU"/>
+                            <constraint firstItem="qZa-3Z-nfM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mIi-h6-QhY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="WebViewMain" destination="qZa-3Z-nfM" id="nOF-hK-OiH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
