@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2648A68B27C0B8FC00B96766 /* NewsDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2648A68A27C0B8FC00B96766 /* NewsDetailController.swift */; };
 		266B9AB727BE14590063FF78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B9AB627BE14590063FF78 /* AppDelegate.swift */; };
 		266B9AB927BE14590063FF78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B9AB827BE14590063FF78 /* SceneDelegate.swift */; };
 		266B9ABB27BE14590063FF78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B9ABA27BE14590063FF78 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2648A68A27C0B8FC00B96766 /* NewsDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailController.swift; sourceTree = "<group>"; };
 		266B9AB327BE14590063FF78 /* Table.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Table.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		266B9AB627BE14590063FF78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		266B9AB827BE14590063FF78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				266B9AC727BE14590063FF78 /* Info.plist */,
 				266B9ABF27BE14590063FF78 /* Table.xcdatamodeld */,
 				266B9ACD27BE1C540063FF78 /* Type1.swift */,
+				2648A68A27C0B8FC00B96766 /* NewsDetailController.swift */,
 			);
 			path = Table;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				266B9ABB27BE14590063FF78 /* ViewController.swift in Sources */,
 				266B9AB727BE14590063FF78 /* AppDelegate.swift in Sources */,
 				266B9AC127BE14590063FF78 /* Table.xcdatamodeld in Sources */,
+				2648A68B27C0B8FC00B96766 /* NewsDetailController.swift in Sources */,
 				266B9AB927BE14590063FF78 /* SceneDelegate.swift in Sources */,
 				266B9ACE27BE1C540063FF78 /* Type1.swift in Sources */,
 			);

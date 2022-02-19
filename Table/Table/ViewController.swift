@@ -62,8 +62,52 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    //클릭 감지
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("\(indexPath.row)")
+        
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "NewsDetailController") as! NewsDetailController
+        
+        if let news = newsData {
+            let row = news[indexPath.row]
+            
+            if let r = row as? Dictionary<String,Any> {
+                if let desc = r["description"] as? String {
+                    controller.desc = desc
+                }
+                if let imageUrl = r["urlToImage"] as? String {
+                    controller.imageUrl = imageUrl
+                }
+           }
+        }
+        
+        //수동
+        //showDetailViewController(controller, sender: nil)
+    }
+    
+    //세그웨이 방법
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let id = segue.identifier, "NewsDetail" == id {
+            if let controller = segue.destination as? NewsDetailController {
+                
+                if let news = newsData {
+                    //let indexPath = sender as! IndexPath
+                    if let indexPath = TableViewMain.indexPathForSelectedRow {
+                        let row = news[indexPath.row]
+                        
+                        if let r = row as? Dictionary<String,Any> {
+                            if let desc = r["description"] as? String {
+                                controller.desc = desc
+                            }
+                            if let imageUrl = r["urlToImage"] as? String {
+                                controller.imageUrl = imageUrl
+                            }
+                       }
+                    }
+                }
+            }
+        }
     }
 
     override func viewDidLoad() {
